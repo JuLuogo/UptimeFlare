@@ -77,16 +77,6 @@ const workerConfig = {
       timeout: 10000,
     },
     {
-      id: 'blog_esa',
-      name: '博客（ESA国内节点）',
-      method: 'HEAD',
-      target: 'https://esa-blog.acofork.com/',
-      statusPageLink: 'https://esa-blog.acofork.com/',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
-    },
-    {
       id: 'blog_cf',
       name: '博客（Cloudflare Pages海外节点）',
       method: 'HEAD',
@@ -226,7 +216,7 @@ const workerConfig = {
     // [可选] 发送通知前的宽限期（分钟）
     // 只有在初始失败后连续 N 次检查都失败时才会发送通知
     // 如果不指定，将立即发送通知
-    gracePeriod: 10,
+    gracePeriod: 5,
   },
   callbacks: {
     onStatusChange: async (
