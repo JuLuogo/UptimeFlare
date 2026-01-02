@@ -202,6 +202,13 @@ const workerConfig = {
       method: 'TCP_PING',
       target: '46.232.60.28:22',
       timeout: 5000,
+    },
+    {
+      id: 'nas_ssh',
+      name: 'NAS SSH',
+      method: 'TCP_PING',
+      target: 'nasv6.072103.xyz:22',
+      timeout: 5000,
     }
   ],
   notification: {
