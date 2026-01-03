@@ -236,8 +236,8 @@ const workerConfig = {
           `;
 
           const resendPayload = {
-            from: "系统状态更新 <uptimeflare@update.2x.nz>",
-            to: ["acofork@foxmail.com"],
+            from: "系统状态更新 <up@up.060730.xyz>",
+            to: ["juluo@peroe.top"],
             subject: subject,
             html: htmlContent,
           };
